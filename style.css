@@ -1,0 +1,118 @@
+:root {
+    /* primary colours */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* neutral colours */
+    /* paragraphs   */
+    --trans-white: hsla(0, 0%, 100%, 0.75);
+
+    /* background, headings, buttons */
+    --very-light-grey: hsl(0, 0%, 95%);
+
+    --lexend-deca:  'Lexend Deca', sans-serif;
+    --big-shoulders: 'Big Shoulders Display', cursive;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: 2.5%;
+    background-color: var(--very-light-grey);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 19.17rem;
+    height: 31.25rem;
+    padding: 3rem;
+}
+
+.card-1 {
+    background-color: var(--bright-orange);
+}
+
+.card-2 {
+    background-color: var(--dark-cyan);
+}
+
+.card-3 {
+    background-color: var(--very-dark-cyan);
+}
+
+svg {
+    margin-bottom: 2.1875rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: var(--big-shoulders);
+    color: var(--very-light-grey);
+    margin-bottom: 2.1875rem;
+}
+
+p {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    font-family: var(--lexend-deca);
+    color: var(--trans-white);
+}
+
+.button {
+    position: absolute;
+    bottom: 2.1rem;
+    font-family: var(--lexend-deca);
+    text-decoration: none;
+    background-color: var(--very-light-grey);
+    border: var(--very-light-grey) solid 2px;
+    border-radius: 2em;
+    padding: 1em 2em;
+    transition: ease-in-out 200ms;
+
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--very-light-grey);
+}
+
+.button-1 {
+    color: var(--bright-orange);
+}
+.button-2 {
+    color: var(--dark-cyan);
+}
+.button-3 {
+    color: var(--very-dark-cyan);
+}
+
+
+
+.attribution { 
+    font-family: var(--lexend-deca);
+    font-size: 11px; text-align: center;
+ }
+
+.attribution a {
+    font-family: var(--lexend-deca);
+     color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:800px) {
+
+    .card-container{
+        flex-direction: column;
+    }
+}
